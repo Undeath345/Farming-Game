@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/hieu/scenes/menu.unity
     guid: 7135c95c620b779499ad7b4094bab5bc
   - enabled: 1
+    path: Assets/hieu/scenes/menu2.unity
+    guid: 8194902ee83437f4884ac3742556abcd
+  - enabled: 1
     path: Assets/hieu/scenes/d.unity
     guid: 583387035baa4844ba6f1c8c4075516a
   - enabled: 1
