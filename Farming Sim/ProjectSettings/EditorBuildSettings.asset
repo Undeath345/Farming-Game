@@ -4,24 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/hieu/scenes/login.unity
-    guid: 2c6c0f9c468b9474c9d337a45abfedcd
-  - enabled: 1
-    path: Assets/hieu/scenes/menu.unity
-    guid: 7135c95c620b779499ad7b4094bab5bc
-  - enabled: 1
-    path: Assets/hieu/scenes/menu2.unity
-    guid: 8194902ee83437f4884ac3742556abcd
-  - enabled: 1
-    path: Assets/hieu/scenes/d.unity
-    guid: 583387035baa4844ba6f1c8c4075516a
-  - enabled: 1
-<<<<<<< HEAD
-    path: Assets/Scenes/Land2.unity
-=======
-    path: Assets/thien/Scenes/SampleScene.unity
->>>>>>> 1772d7afb725a93a359064bbafe83675d93f3b46
-    guid: 2cda990e2423bbf4892e6590ba056729
+  m_Scenes: []
   m_configObjects: {}

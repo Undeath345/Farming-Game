@@ -12,11 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
   m_Name: PlayFabEditorPrefsSO
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:Farming Sim/Assets/hieu/scripts/Editor/Resources/PlayFabEditorPrefsSO.asset
+  DevAccountEmail: thien10a1bmt@gmail.com
+  DevAccountToken: 1h9d9gnxbq1hassz566dj8nf8zjfnt94y3mk6dozbq747yqrxgh4m39919acykatc616gjyr85zke3zg79r7r35oi4g8qg9cdmaeouuq9m4uh6zpss5xcqo94xx79ogzoa4cah6oqirzurj4pt6rga5yyo7ekxzsynwbo66puqkneehwr4dr7e19dw9zx46ygrpmpt5w
+  AadAuthorization: 
+  SelectedStudio: 
+  SdkPath: Assets/hieu/PlayFabSDK
+=======
   DevAccountEmail: Duanmau1@gmail.com
   DevAccountToken: 4tkis8i6dye3br91afuskgnrtw6887akoyxkzudg5fr8dm69mqccpk4ro51mwuoqa43str7m8io7a16pnducbg979zegjyhyba3e7q4fzote4r45pati5gdnm44i7ccciab5dcbq6m8yt4oc6c8nhbjprxabxxu74d4imp1cwpyefx6565mqjot78jkayn5gpxrbmn8x
   AadAuthorization: 
   SelectedStudio: 
   SdkPath: Assets/PlayFabSDK
+>>>>>>> c7d8a1ffe6d8316459ff6ba237de4870459939a0:Farming Sim/Assets/PlayFabEditorExtensions/Editor/Resources/PlayFabEditorPrefsSO.asset
   EdExPath: 
   LocalCloudScriptPath: 
   PanelIsShown: 1
