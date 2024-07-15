@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,679 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 448
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0faee6dc451cd4cae4d02efa0b99b2
+      internalID: -513012476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 416
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972a0026386aaef43ab1472d314f1571
+      internalID: -607015558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 416
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550b800d1c2bf684eb707cae083c16b3
+      internalID: -642816234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 384
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c06f75539407d34db8fae3888559e5b
+      internalID: -663353220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 384
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04556f5c43114dc428e4b6d0d3d090fd
+      internalID: 401227027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 384
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d419667ef50510f45b8d6a38d4505a87
+      internalID: 1900044610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 384
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f679eb24c14d25547a69ebb4721a0a82
+      internalID: -1362983901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 384
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3516d9977eca7704ba50d852e8adb1d2
+      internalID: -339925135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 352
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa268d173aae0864ba135fca31737d17
+      internalID: 1082525180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 352
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ec49dc97f67854fb02d3fdde84f14c
+      internalID: -772407907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 352
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d4e24497d19b84cbb42cf77942e265
+      internalID: 987397351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 352
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73e863b761bdd04b8933dbac49c382b
+      internalID: 93365263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 320
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ea81b028e3fcf40842c5bdf02dfdfa
+      internalID: -1502296919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 320
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc38f4d4c7454344b6200c2c2e1837f
+      internalID: -882964067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 288
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bd071f906994d4890978a43f991a2d
+      internalID: -1812660660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 288
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5d4d86bc5531944a26ea354dcb58b5
+      internalID: 985468430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 256
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b38142d90623fd4ab8216a97c2fc06e
+      internalID: -486638148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 256
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f8f829a57c02c44908dec3472b10cf
+      internalID: 1213271610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 224
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade68e1d15de59048b7d45149fb5a78b
+      internalID: 209477034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 224
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bf415c4098bc44f8453ea1e88255c8
+      internalID: 27894363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 192
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6296a8a7d9e23ad43bc332a23b09b6a0
+      internalID: -1762592729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 192
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003cd72c479264a48b9139881d56d25f
+      internalID: 911154045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 160
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec74b0b7522a1e147ba994d2c7435a5f
+      internalID: -592990596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 160
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48cc9ea0b0a268409f9d89a20e8a698
+      internalID: 737035781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 128
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6cecebf7010ef049b42fab4ceb61a24
+      internalID: 1201904357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_25
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 128
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef54af883f0eb94d9ecfa5b4a649e51
+      internalID: -521797273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_26
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 96
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8410f469564ca944b9c5b18d01abeea9
+      internalID: -786669606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_27
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 96
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6840b65d109fa40a464ad796548289
+      internalID: -1854859975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_28
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 64
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7295965bf7085641b667892bf259738
+      internalID: -84362882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 32
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbac92c230825ca45a4e5bccefa27a2b
+      internalID: 1276520693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_30
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 32
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1df4112546d234a880d654f79fbd73
+      internalID: -1669647511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teemo Basic emote animations sprite sheet_31
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20249701b3331d48a4b3555e92d0f89
+      internalID: -879477911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +791,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Teemo Basic emote animations sprite sheet_0: -513012476
+      Teemo Basic emote animations sprite sheet_1: -607015558
+      Teemo Basic emote animations sprite sheet_10: 987397351
+      Teemo Basic emote animations sprite sheet_11: 93365263
+      Teemo Basic emote animations sprite sheet_12: -1502296919
+      Teemo Basic emote animations sprite sheet_13: -882964067
+      Teemo Basic emote animations sprite sheet_14: -1812660660
+      Teemo Basic emote animations sprite sheet_15: 985468430
+      Teemo Basic emote animations sprite sheet_16: -486638148
+      Teemo Basic emote animations sprite sheet_17: 1213271610
+      Teemo Basic emote animations sprite sheet_18: 209477034
+      Teemo Basic emote animations sprite sheet_19: 27894363
+      Teemo Basic emote animations sprite sheet_2: -642816234
+      Teemo Basic emote animations sprite sheet_20: -1762592729
+      Teemo Basic emote animations sprite sheet_21: 911154045
+      Teemo Basic emote animations sprite sheet_22: -592990596
+      Teemo Basic emote animations sprite sheet_23: 737035781
+      Teemo Basic emote animations sprite sheet_24: 1201904357
+      Teemo Basic emote animations sprite sheet_25: -521797273
+      Teemo Basic emote animations sprite sheet_26: -786669606
+      Teemo Basic emote animations sprite sheet_27: -1854859975
+      Teemo Basic emote animations sprite sheet_28: -84362882
+      Teemo Basic emote animations sprite sheet_29: 1276520693
+      Teemo Basic emote animations sprite sheet_3: -663353220
+      Teemo Basic emote animations sprite sheet_30: -1669647511
+      Teemo Basic emote animations sprite sheet_31: -879477911
+      Teemo Basic emote animations sprite sheet_4: 401227027
+      Teemo Basic emote animations sprite sheet_5: 1900044610
+      Teemo Basic emote animations sprite sheet_6: -1362983901
+      Teemo Basic emote animations sprite sheet_7: -339925135
+      Teemo Basic emote animations sprite sheet_8: 1082525180
+      Teemo Basic emote animations sprite sheet_9: -772407907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
