@@ -18,6 +18,10 @@ EditorBuildSettings:
     path: Assets/hieu/scenes/d.unity
     guid: 583387035baa4844ba6f1c8c4075516a
   - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Scenes/Land2.unity
+=======
     path: Assets/thien/Scenes/SampleScene.unity
+>>>>>>> 1772d7afb725a93a359064bbafe83675d93f3b46
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
