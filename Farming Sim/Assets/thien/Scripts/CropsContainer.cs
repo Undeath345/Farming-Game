@@ -6,5 +6,5 @@ using UnityEngine;
 public class CropsContainer : MonoBehaviour
 {
 
-    List<CropTile> crops;
+
 }
