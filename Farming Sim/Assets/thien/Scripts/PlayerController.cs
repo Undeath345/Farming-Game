@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] float speed = 2f;
     Vector2 motionVector;
-    Vector2 lastMotionVector;
+    public Vector2 lastMotionVector;
     Animator ani;
     public bool moving;
     void Awake()
