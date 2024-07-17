@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 4989015466305502431}
   - component: {fileID: 5691313418999003594}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SoundVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1513,8 +1513,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1.1900024}
-  m_SizeDelta: {x: -276.81, y: -42.77}
+  m_AnchoredPosition: {x: -0.000030517578, y: -1.1900024}
+  m_SizeDelta: {x: -276.81, y: -42.76999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &126363699624967701
 CanvasRenderer:
@@ -2489,7 +2489,7 @@ GameObject:
   - component: {fileID: 726555679657492436}
   - component: {fileID: 8186652375037513069}
   m_Layer: 5
-  m_Name: Slider (1)
+  m_Name: BackgroundVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
