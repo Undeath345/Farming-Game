@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlighter: {fileID: 2047532092}
---- !u!114 &602335395
+--- !u!114 &602335397
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -380,11 +380,6 @@ MonoBehaviour:
   offsetDistance: 1
   sizeOfInteractableArea: 1.2
   highlightController: {fileID: 0}
---- !u!1 &1829366857 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5454765869837162274, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
-  m_PrefabInstance: {fileID: 5516113371001830297}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2047532092
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,7 +406,7 @@ Transform:
   m_GameObject: {fileID: 2047532092}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.464, y: -2.839, z: 0}
+  m_LocalPosition: {x: 0.18, y: -3.3, z: 0}
   m_LocalScale: {x: 0.39599282, y: 0.39599282, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -480,7 +475,7 @@ PrefabInstance:
     - target: {fileID: 4742186980088545465, guid: 3c04c69cc12e4f840a6f1b31fdb4b9fb, type: 3}
       propertyPath: pickUpDrop
       value: 
-      objectReference: {fileID: 1829366857}
+      objectReference: {fileID: 5454765869837162274, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
     - target: {fileID: 5858271503335610443, guid: 3c04c69cc12e4f840a6f1b31fdb4b9fb, type: 3}
       propertyPath: m_Name
       value: Trees, stumps and bushes_16
@@ -776,7 +771,7 @@ PrefabInstance:
       addedObject: {fileID: 602335392}
     - targetCorrespondingSourceObject: {fileID: 8413104041311322075, guid: 629bb6f11ac2df34fa785803b1580fcb, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 602335395}
+      addedObject: {fileID: 602335397}
   m_SourcePrefab: {fileID: 100100000, guid: 629bb6f11ac2df34fa785803b1580fcb, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

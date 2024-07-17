@@ -4,5 +4,18 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Scenes: []
+=======
+  m_Scenes:
+  - enabled: 1
+    path: Assets/hieu/scenes/d.unity
+    guid: 583387035baa4844ba6f1c8c4075516a
+  - enabled: 1
+    path: Assets/hieu/scenes/menu.unity
+    guid: 7135c95c620b779499ad7b4094bab5bc
+  - enabled: 1
+    path: Assets/hieu/scenes/menu2.unity
+    guid: f35b997e82bf29a48afa645249ad8140
+>>>>>>> e20b5c65590a486bcc2761eb52212725eb3ccf4a
   m_configObjects: {}
