@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Farming Sim/Assets/Script/CropsContainer.cs.meta
 guid: 3a8bfdadcca753241a814fef96eedf7b
+=======
+guid: fdc628ec738844d4eab675f79ebb8e44
+>>>>>>> 4d2280d6f33e7d7634202f7dd559017773c7352b:Farming Sim/Assets/Kiet/Script/RockBreaker.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
