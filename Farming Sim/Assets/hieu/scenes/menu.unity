@@ -908,6 +908,22 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 399357685}
+    - target: {fileID: 1228641576738401977, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.19215688
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228641576738401977, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.44705886
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228641576738401977, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.6392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228641576738401977, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281430691
+      objectReference: {fileID: 0}
     - target: {fileID: 1249670215904132292, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -918,6 +934,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1398515079542287281, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
       propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273401077428996244, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273401077428996244, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 05d9aceb32db88e4fb1fe56bcdd08c25, type: 2}
+    - target: {fileID: 2273401077428996244, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.19613376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273401077428996244, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.44897255
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273401077428996244, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.6377357
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273401077428996244, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8762267594857544555, guid: 05d9aceb32db88e4fb1fe56bcdd08c25, type: 2}
+    - target: {fileID: 2273401077428996244, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281496227
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273401077428996244, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3101282546139019471, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
@@ -1023,6 +1071,22 @@ PrefabInstance:
     - target: {fileID: 7393754798532541615, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7683757658697862653, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.19215688
+      objectReference: {fileID: 0}
+    - target: {fileID: 7683757658697862653, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.44705886
+      objectReference: {fileID: 0}
+    - target: {fileID: 7683757658697862653, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.6392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 7683757658697862653, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281430691
       objectReference: {fileID: 0}
     - target: {fileID: 8051982450180635727, guid: 876d729f245833b4f8929b22b46639eb, type: 3}
       propertyPath: m_fontSize
