@@ -27,7 +27,12 @@ public class ItemDragAndDropController : MonoBehaviour
             {
                 if (EventSystem.current.IsPointerOverGameObject() == false)
                 {
-                    Debug.Log("We are clicking outside the panel");
+                    Vector3 WorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    WorldPosition.z = 0;
+                    ItemSpawnManager.instance.SpawnItem(WorldPosition, itemSlot.item, itemSlot.count);
+
+                    itemSlot.Clear();
+                    itemIcon.SetActive(false);
                 }
             }
         }

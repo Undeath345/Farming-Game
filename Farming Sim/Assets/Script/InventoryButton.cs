@@ -11,6 +11,7 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] UnityEngine.UI.Image icon;  // Specify full namespace
     [SerializeField] TextMeshProUGUI text;   // Specify full namespace
+    [SerializeField] UnityEngine.UI.Image highlight;
 
     int myIndex;
 
@@ -45,8 +46,12 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick (PointerEventData eventData)
     {
-        ItemContainer inventory = GameManager.Instance.inventoryContainer;
-        GameManager.Instance.dragAndDropController.OnClick(inventory.slots[myIndex]);
-        transform.parent.GetComponent<InventoryPanel>().Show();
+        ItemPanel itemPanel = transform.parent.GetComponent<ItemPanel>();
+        itemPanel.OnClick(myIndex);
+    }
+
+    public void Highlight (bool b)
+    {
+        highlight.gameObject.SetActive(b);
     }
 }
