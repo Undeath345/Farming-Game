@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6901815398250035622}
   - component: {fileID: 4174574483828721814}
   - component: {fileID: 1420746987219371138}
-  - component: {fileID: 4742186980088545465}
   m_Layer: 0
   m_Name: Trees, stumps and bushes_16
   m_TagString: Untagged
@@ -131,18 +130,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.44, y: 0.48}
   m_EdgeRadius: 0
---- !u!114 &4742186980088545465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5858271503335610443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eda71b0dae28cf43af80277cbe43c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pickUpDrop: {fileID: 0}
-  dropCount: 5
-  spread: 0.7
