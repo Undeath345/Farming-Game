@@ -12,12 +12,12 @@ public class ToolsCharacterController : MonoBehaviour
     [SerializeField] float offsetDistance = 1.0f;
     [SerializeField] float sizeOfInteractableArea = 1.2f;
     [SerializeField] MarkerManager markerManager;
-    [SerializeField] TileMapMapController tileMapReadcontroller;
+    [SerializeField] TileMapReadController tileMapReadcontroller;
     [SerializeField] float maxDistance = 1.5f;
     [SerializeField] CropsManager cropsManager;
     [SerializeField] TileData plowableTiles;
 
-    Vector3Int selectTilePosition;
+    Vector3Int selectedTilePosition;
     bool selectable;
 
     private void Awake()
@@ -31,9 +31,9 @@ public class ToolsCharacterController : MonoBehaviour
         SelectTile();
         CanSelectCheck();
         Marker();
-        if (Input.GetMouseButtonDown(0)
+        if (Input.GetMouseButtonDown(0))
         {
-            if (UseToolWorld() == true)
+            if(UseToolWorld() == true)
             {
                 return;
             }
@@ -58,7 +58,7 @@ public class ToolsCharacterController : MonoBehaviour
         markerManager.markedCellPosition = selectedTilePosition;
     }
     
-    private void UserToolWorld()
+    private bool UseToolWorld()
     {
         Vector2 position = rgbd2d.position + character.lastMotionVector * offsetDistance;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
@@ -69,15 +69,26 @@ public class ToolsCharacterController : MonoBehaviour
             {
 
                 hit.Hit();
-                break;
+                return true;
             }
         }
+
+        return false;
     }
     private void UseToolGrid()
     {
-        if (selectable)
+        TileBase tileBase = tileMapReadcontroller.GetTileBase(selectedTilePosition);
+        TileData tileData = tileMapReadcontroller.GetTileData(tileBase);
+        if (selectable == true)
         {
-            cropsManager.Plow(Vector2Int)selectedTile);
+            if (cropsManager.Check(selectedTilePosition))
+            {
+                cropsManager.Seed(selectedTilePosition);
+            }
+            else
+            {
+                cropsManager.Plow(selectedTilePosition);
+            }
         }
     }*/
 }

@@ -50,10 +50,10 @@ public class menu : MonoBehaviour
     }
     public void play()
     {
-        SceneManager.LoadScene("Land1");
+        SceneManager.LoadScene(2);
     }
     public void dangxuat()
     {
-        SceneManager.LoadScene("Login");
+        SceneManager.LoadScene(0);
     }
 }
