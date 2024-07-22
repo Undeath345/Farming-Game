@@ -7,7 +7,7 @@ using UnityEngine.Timeline;
 
 public class ToolsCharacterController : MonoBehaviour
 {
-    PlayerController character;
+    /*PlayerController character;
     Rigidbody2D rgbd2d;
     [SerializeField] float offsetDistance = 1.0f;
     [SerializeField] float sizeOfInteractableArea = 1.2f;
@@ -90,5 +90,5 @@ public class ToolsCharacterController : MonoBehaviour
                 cropsManager.Plow(selectedTilePosition);
             }
         }
-    }
+    }*/
 }
