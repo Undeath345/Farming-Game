@@ -140,9 +140,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5858271503335610443}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eda71b0dae28cf43af80277cbe43c5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 818243169843df343b040584d96175d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpDrop: {fileID: 0}
-  dropCount: 5
+  pickUpDrop: {fileID: 4633591801176701180, guid: dfa3668decdbe884e8c55dfb7b15946e, type: 3}
   spread: 0.7
+  item: {fileID: 11400000, guid: 2aa35c821bbbfa84da082af5e63d07dd, type: 2}
+  itemCountInOneDrop: 1
+  dropCount: 5
