@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &364126186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8093362780397411360, guid: 0ef6851cfaefb124b810597cfefab9ed, type: 3}
+  m_PrefabInstance: {fileID: 8670276635511044951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &367962967
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,6 +901,7 @@ GameObject:
   - component: {fileID: 1606796321}
   - component: {fileID: 1606796320}
   - component: {fileID: 1606796322}
+  - component: {fileID: 1606796324}
   - component: {fileID: 1606796323}
   m_Layer: 0
   m_Name: chicken default_9
@@ -965,7 +971,7 @@ Transform:
   m_GameObject: {fileID: 1606796317}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9674683, y: -1.895252, z: 0}
+  m_LocalPosition: {x: -10.88, y: -0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1054,7 +1060,7 @@ Animator:
   m_GameObject: {fileID: 1606796317}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e3d93472851f3b044916651875d8dc59, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6ade444472b90424888f0ff18a99acd8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1074,7 +1080,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1606796317}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d45ff7d8d56f1f34d83e1586327b1c00, type: 3}
+  m_Script: {fileID: 11500000, guid: abe53545dd7219f4485bee53fecd21e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chicken: {fileID: 364126186}
+--- !u!114 &1606796324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606796317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86af545e4aa396c409982082296c194c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2623639667366535792
@@ -1144,11 +1163,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1968811621852959747, guid: 0ef6851cfaefb124b810597cfefab9ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1968811621852959747, guid: 0ef6851cfaefb124b810597cfefab9ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.56
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1968811621852959747, guid: 0ef6851cfaefb124b810597cfefab9ed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1190,6 +1209,10 @@ PrefabInstance:
       propertyPath: love
       value: 
       objectReference: {fileID: 1509591046}
+    - target: {fileID: 5159169603212633695, guid: 0ef6851cfaefb124b810597cfefab9ed, type: 3}
+      propertyPath: areaSize
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8093362780397411360, guid: 0ef6851cfaefb124b810597cfefab9ed, type: 3}
       propertyPath: m_Name
       value: chicken brown_0
