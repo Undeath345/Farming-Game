@@ -9,16 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51a704a5986a5774cb8a3c97e6b6b875, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
   m_Name: PlayFabEditorPrefsSO
   m_EditorClassIdentifier: 
-  DevAccountEmail: 
-  DevAccountToken: 
+  DevAccountEmail: duanmau1@gmail.com
+  DevAccountToken: w9n89f6891ycbj4ugfs7nfy7ntbm8j53n7guouyoaaoom3aoeoay18uy19m3xu8rk9j41uiy7zjmjbd8if57egat8isfqncnininfkgfhqzkoa91yqwpbb1eqdz6noed8jeresxj17gu1pyy3rr6sbxa1hzcwphr6tzmqpmpf6ywwkwkejh8gg3yg78u5taytji7gjaa
   AadAuthorization: 
-  SelectedStudio: 
-  SdkPath: 
+  SelectedStudio: My Game Studio
+  SdkPath: Assets/PlayFabSDK
   EdExPath: 
   LocalCloudScriptPath: 
   PanelIsShown: 0
-  curMainMenuIdx: 0
+  curMainMenuIdx: 2
   curSubMenuIdx: 0
