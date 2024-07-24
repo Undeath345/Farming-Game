@@ -17,6 +17,8 @@ public class dichuyen : MonoBehaviour
     public Transform vt;
     bool l = false;
     private Vector2 targetPosition;
+    public Vector2 khuvuc = new Vector2(0,0);
+    //private float tdhuong = 0.1f;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -57,9 +59,17 @@ public class dichuyen : MonoBehaviour
                 // Random position within the defined area
                   Vector2 newPos = new Vector2(Random.Range(-areaSize, areaSize), Random.Range(-areaSize, areaSize));
                  Vector2 direction = (newPos - (Vector2)transform.position).normalized;
-                movement = direction;
-                //targetPosition = new Vector2(Random.Range(-areaSize, areaSize), Random.Range(-areaSize, areaSize));
+                //targetPosition = new Vector2(Random.Range(-areaSize, areaSize), Random.Range(-areaSize, areaSize));Di
                 // Randomly decide whether to walk or idle
+                /*float elapsedtime = 0;
+                Vector2 currenDirection = movement;
+                while (elapsedtime < tdhuong)
+                {
+                    movement = Vector2.Lerp(currenDirection, newPos, elapsedtime/tdhuong);
+                    elapsedtime += Time.deltaTime;
+                    yield return null;
+                }*/
+                movement = direction;
                 bool isWalking = Random.Range(0, 2) == 1;
                 if (isWalking)
                 {

@@ -130,3 +130,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.44, y: 0.48}
   m_EdgeRadius: 0
+<<<<<<< HEAD
+=======
+--- !u!114 &4742186980088545465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5858271503335610443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818243169843df343b040584d96175d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpDrop: {fileID: 4633591801176701180, guid: dfa3668decdbe884e8c55dfb7b15946e, type: 3}
+  spread: 0.7
+  item: {fileID: 11400000, guid: 2aa35c821bbbfa84da082af5e63d07dd, type: 2}
+  itemCountInOneDrop: 1
+  dropCount: 5
+>>>>>>> ab6b157a315a2d176077c374a7b2981b4f9eb9df
