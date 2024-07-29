@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4174574483828721814}
   - component: {fileID: 1420746987219371138}
   - component: {fileID: 4742186980088545465}
+  - component: {fileID: -428879210860030678}
+  - component: {fileID: 8906323157106860190}
   m_Layer: 0
   m_Name: Trees, stumps and bushes_16
   m_TagString: Untagged
@@ -54,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -145,6 +147,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpDrop: {fileID: 4633591801176701180, guid: dfa3668decdbe884e8c55dfb7b15946e, type: 3}
   spread: 0.7
-  item: {fileID: 11400000, guid: 2aa35c821bbbfa84da082af5e63d07dd, type: 2}
+  item: {fileID: 11400000, guid: 90bac99502db0ad4eb2328a2b6047da4, type: 2}
   itemCountInOneDrop: 1
   dropCount: 5
+--- !u!114 &-428879210860030678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5858271503335610443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50c1a1387409464a88f812356fdb421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8906323157106860190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5858271503335610443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a2c7abb1ddc8c4ead8d881e94a4075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
