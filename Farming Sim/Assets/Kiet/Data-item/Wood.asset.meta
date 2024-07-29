@@ -1,5 +1,11 @@
 fileFormatVersion: 2
-guid: 2aa35c821bbbfa84da082af5e63d07dd
+<<<<<<< HEAD:Farming Sim/Assets/Kiet/Data-item/New Item.asset.meta
+guid: 90bac99502db0ad4eb2328a2b6047da4
+=======
+guid: df16e1c901a96ad49bb3e47862e64ee2
+timeCreated: 1468007030
+licenseType: Pro
+>>>>>>> ab6b157a315a2d176077c374a7b2981b4f9eb9df:Farming Sim/Assets/PlayFabEditorExtensions/Editor/UI/PlayFabStyles.guiskin.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
