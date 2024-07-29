@@ -7,6 +7,7 @@ public class Rockbreaker: ToolHit
     [SerializeField] GameObject pickUpDrop;
     [SerializeField] int dropCount = 5;
     [SerializeField] float spread = 0.7f;
+    Character character;
     public override void Hit()
     {
         while (dropCount > 0)
@@ -17,7 +18,7 @@ public class Rockbreaker: ToolHit
             position.y += spread * UnityEngine.Random.value - spread / 2;
             GameObject go = Instantiate(pickUpDrop);
             go.transform.position = position;
-
+            character.GetTired(10);
         }
         Destroy(gameObject);
     }

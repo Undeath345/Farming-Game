@@ -7,6 +7,7 @@ public class TreeCutter : ToolHit
     [SerializeField] GameObject pickUpDrop;
    
     [SerializeField] float spread = 0.7f;
+    Character character;
 
     [SerializeField] Item item;
     [SerializeField] int itemCountInOneDrop = 1;
@@ -19,7 +20,7 @@ public class TreeCutter : ToolHit
             Vector3 position = transform.position;
             position.x += spread * UnityEngine.Random.value - spread / 2;
             position.y += spread * UnityEngine.Random.value - spread / 2;
-            
+            character.GetTired(10);
             ItemSpawnManager.instance.SpawnItem(position,item,itemCountInOneDrop);
 
         }
