@@ -46149,11 +46149,8 @@ RectTransform:
   - {fileID: 949648244}
   - {fileID: 1167293665}
   - {fileID: 1160297271}
-<<<<<<< HEAD
   - {fileID: 512083358}
-=======
   - {fileID: 1106753925}
->>>>>>> 6985873632ce574fcf246d5bab155a31e0701ff8
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -52947,7 +52944,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6591151074948674668, guid: 9bdb77b4412464d4aad4a3beec71db90, type: 3}
   m_PrefabInstance: {fileID: 1813865514}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!114 &1813865516 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8701503431004378659, guid: 9bdb77b4412464d4aad4a3beec71db90, type: 3}
@@ -52959,7 +52955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31bc2ece5df90484b8b7f2cae57dce04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
 --- !u!1 &1815808369
 GameObject:
   m_ObjectHideFlags: 0
@@ -57790,7 +57785,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90.069, y: -180, z: -359.93298}
->>>>>>> 6985873632ce574fcf246d5bab155a31e0701ff8
 --- !u!1 &1827502598
 GameObject:
   m_ObjectHideFlags: 0
@@ -59187,8 +59181,5 @@ SceneRoots:
   - {fileID: 472170352}
   - {fileID: 473688426}
   - {fileID: 47464914}
-<<<<<<< HEAD
   - {fileID: 49410848}
-=======
   - {fileID: 1815808372}
->>>>>>> 6985873632ce574fcf246d5bab155a31e0701ff8
