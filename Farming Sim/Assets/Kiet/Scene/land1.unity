@@ -256,8 +256,38 @@ MonoBehaviour:
     m_RotationOrder: 4
   dayLightColor: {r: 1, g: 1, b: 1, a: 1}
   timeScale: 6000
+  startAtTime: 28800
   text: {fileID: 512083359}
-  globalLight: {fileID: 0}
+  globalLight: {fileID: 49410847}
+--- !u!114 &488111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2accd1fb304fc4681f42c43b4fc6a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plowed: {fileID: 11400000, guid: 3897f0ea9a6896a40bba2aae031b0021, type: 2}
+  seeded: {fileID: 11400000, guid: 8c6ff3d3b0836f04a93e7df568174b03, type: 2}
+  targetTilemap: {fileID: 1068766816}
+--- !u!114 &488112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac320d846b18df4fb145a7125fb57d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 689811826}
+  cropsManager: {fileID: 488111}
 --- !u!1001 &23208401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -473,7 +503,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.98679245, b: 0.98679245, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -592,6 +622,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 995502057}
     - target: {fileID: 1690952294376911251, guid: 629bb6f11ac2df34fa785803b1580fcb, type: 3}
+      propertyPath: timeController
+      value: 
+      objectReference: {fileID: 488108}
+    - target: {fileID: 1690952294376911251, guid: 629bb6f11ac2df34fa785803b1580fcb, type: 3}
       propertyPath: inventoryContainer
       value: 
       objectReference: {fileID: 11400000, guid: 70ac2bf415c737b4cb3560549072162b, type: 2}
@@ -659,6 +693,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8413104041311322075, guid: 629bb6f11ac2df34fa785803b1580fcb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 488108}
+    - targetCorrespondingSourceObject: {fileID: 8413104041311322075, guid: 629bb6f11ac2df34fa785803b1580fcb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 488112}
+    - targetCorrespondingSourceObject: {fileID: 8413104041311322075, guid: 629bb6f11ac2df34fa785803b1580fcb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 488111}
   m_SourcePrefab: {fileID: 100100000, guid: 629bb6f11ac2df34fa785803b1580fcb, type: 3}
 --- !u!1 &121227346
 GameObject:
@@ -29905,7 +29945,7 @@ GameObject:
   - component: {fileID: 151923157}
   - component: {fileID: 151923159}
   m_Layer: 0
-  m_Name: Mushrooms, Flowers, Stones_43
+  m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29935,12 +29975,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 151923155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a8bfdadcca753241a814fef96eedf7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 818243169843df343b040584d96175d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpDrop: {fileID: 0}
-  dropCount: 5
+  pickUpDrop: {fileID: 3044940206166873349, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
   spread: 0.7
+  item: {fileID: 11400000, guid: 8377fb26fe865b0459579441cb1c1586, type: 2}
+  itemCountInOneDrop: 1
+  dropCount: 5
+  nodeType: 2
 --- !u!212 &151923158
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49532,7 +49575,7 @@ GameObject:
   - component: {fileID: 1253964092}
   - component: {fileID: 1253964094}
   m_Layer: 0
-  m_Name: Mushrooms, Flowers, Stones_14
+  m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49562,12 +49605,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1253964090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a8bfdadcca753241a814fef96eedf7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 818243169843df343b040584d96175d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpDrop: {fileID: 0}
-  dropCount: 5
+  pickUpDrop: {fileID: 3044940206166873349, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
   spread: 0.7
+  item: {fileID: 11400000, guid: 8377fb26fe865b0459579441cb1c1586, type: 2}
+  itemCountInOneDrop: 1
+  dropCount: 5
+  nodeType: 2
 --- !u!212 &1253964093
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -50041,6 +50087,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8906323157106860190, guid: 3c04c69cc12e4f840a6f1b31fdb4b9fb, type: 3}
+      propertyPath: count
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906323157106860190, guid: 3c04c69cc12e4f840a6f1b31fdb4b9fb, type: 3}
+      propertyPath: toSpawn
+      value: 
+      objectReference: {fileID: 11400000, guid: 7c712eb2b8b3ad340b614744c7270dfd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -57798,7 +57852,7 @@ GameObject:
   - component: {fileID: 1827502600}
   - component: {fileID: 1827502602}
   m_Layer: 0
-  m_Name: Mushrooms, Flowers, Stones_43 (1)
+  m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57828,12 +57882,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1827502598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a8bfdadcca753241a814fef96eedf7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 818243169843df343b040584d96175d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpDrop: {fileID: 0}
-  dropCount: 5
+  pickUpDrop: {fileID: 3044940206166873349, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
   spread: 0.7
+  item: {fileID: 11400000, guid: 8377fb26fe865b0459579441cb1c1586, type: 2}
+  itemCountInOneDrop: 1
+  dropCount: 5
+  nodeType: 2
 --- !u!212 &1827502601
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57947,8 +58004,9 @@ GameObject:
   - component: {fileID: 1849297879}
   - component: {fileID: 1849297881}
   - component: {fileID: 1849297880}
+  - component: {fileID: 1849297882}
   m_Layer: 0
-  m_Name: Mushrooms, Flowers, Stones_43 (2)
+  m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57978,12 +58036,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1849297878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a8bfdadcca753241a814fef96eedf7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 818243169843df343b040584d96175d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpDrop: {fileID: 0}
-  dropCount: 5
+  pickUpDrop: {fileID: 3044940206166873349, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
   spread: 0.7
+  item: {fileID: 11400000, guid: 8377fb26fe865b0459579441cb1c1586, type: 2}
+  itemCountInOneDrop: 1
+  dropCount: 5
+  nodeType: 2
 --- !u!212 &1849297881
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -58036,6 +58097,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1849297882
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849297878}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.0625, y: 1.75}
+    newSize: {x: 2.0625, y: 1.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0625, y: 1.75}
+  m_EdgeRadius: 0
 --- !u!1001 &1881627549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58467,7 +58573,7 @@ GameObject:
   - component: {fileID: 1952923394}
   - component: {fileID: 1952923396}
   m_Layer: 0
-  m_Name: Mushrooms, Flowers, Stones_13
+  m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58497,12 +58603,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1952923392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a8bfdadcca753241a814fef96eedf7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 818243169843df343b040584d96175d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpDrop: {fileID: 0}
-  dropCount: 5
+  pickUpDrop: {fileID: 3044940206166873349, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
   spread: 0.7
+  item: {fileID: 11400000, guid: 8377fb26fe865b0459579441cb1c1586, type: 2}
+  itemCountInOneDrop: 1
+  dropCount: 5
+  nodeType: 2
 --- !u!212 &1952923395
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -59054,6 +59163,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6901815398250035622, guid: 3c04c69cc12e4f840a6f1b31fdb4b9fb, type: 3}
   m_PrefabInstance: {fileID: 694299058}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &576555340982677727
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2043307877201536108, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043307877201536108, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043307877201536108, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043307877201536108, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043307877201536108, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043307877201536108, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043307877201536108, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043307877201536108, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043307877201536108, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043307877201536108, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044940206166873349, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
+      propertyPath: m_Name
+      value: tools-n-meterial-items_9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad6d6b1c5c1ed78419b5f6e1c955b16b, type: 3}
 --- !u!1001 &4114408090670803024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59183,3 +59349,4 @@ SceneRoots:
   - {fileID: 47464914}
   - {fileID: 49410848}
   - {fileID: 1815808372}
+  - {fileID: 576555340982677727}

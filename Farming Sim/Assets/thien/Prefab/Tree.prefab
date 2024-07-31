@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -428879210860030678}
   - component: {fileID: 8906323157106860190}
   m_Layer: 0
-  m_Name: Trees, stumps and bushes_16
+  m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,6 +150,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 90bac99502db0ad4eb2328a2b6047da4, type: 2}
   itemCountInOneDrop: 1
   dropCount: 5
+  nodeType: 1
 --- !u!114 &-428879210860030678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,3 +175,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a2c7abb1ddc8c4ead8d881e94a4075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toSpawn: {fileID: 0}
+  count: 0

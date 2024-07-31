@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abe9a58b10ada5a4da8abbf6df4dfdc9, type: 3}
-  m_Name: Hoe
-  m_EditorClassIdentifier: Assembly-CSharp::Item
-  Name: Hoe
+  m_Name: Pickaxe
+  m_EditorClassIdentifier: 
+  Name: Pickaxe
   stackable: 0
   icon: {fileID: 1333648791, guid: a8bd3f01bfba3a84eb2fa9793cd30e2d, type: 3}
-  onAction: {fileID: 0}
-  onTileMapAction: {fileID: 11400000, guid: 5b9b4e16c58959745af1d90616335971, type: 2}
+  onAction: {fileID: 11400000, guid: a741b060e7478b84199d545038ca9680, type: 2}
+  onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}
