@@ -7,7 +7,7 @@ using UnityEngine.Tilemaps;
 public class PlowTile : ToolAction
 {
     [SerializeField] List<TileBase> canPlow;
-    public override bool OnApplyToTileMap(Vector3Int GridPosition, TileMapReadController tileMapReadController)
+    public override bool OnApplyToTileMap(Vector3Int GridPosition, TileMapReadController tileMapReadController, Item item)
     {
         TileBase tileToPlow = tileMapReadController.GetTileBase(GridPosition);
 
