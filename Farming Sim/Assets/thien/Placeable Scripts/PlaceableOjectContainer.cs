@@ -4,14 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class PlaceableOject
+public class PlaceableObject
 {
     public Item placedItem;
-    public Transform targetOject;
+    public Transform targetObject;
     public Vector3Int positionOnGrid;
+
+    public PlaceableObject(Item item, Transform target, Vector3Int pos)
+    {
+        placedItem = item;
+        targetObject = target;
+        positionOnGrid = pos;
+    }
 }
 [CreateAssetMenu(menuName ="Data/Placeable Object Container")]
-public class PlaceableOjectContainer : ScriptableObject
+public class PlaceableObjectContainer : ScriptableObject
 {
-    public List<GameObject> placeableOjects;
+    public List<PlaceableObject> placeableOjects;
 }
