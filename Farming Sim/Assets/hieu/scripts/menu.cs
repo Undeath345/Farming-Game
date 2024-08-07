@@ -9,6 +9,7 @@ public class menu : MonoBehaviour
 {   
     [SerializeField] private GameObject pn;
     public Slider amthanh;
+    public Slider bgramthanh;
     public AudioSource sound;
     private bool k;
     private void Start()
@@ -22,6 +23,20 @@ public class menu : MonoBehaviour
             amthanh.value = sound.volume;
             amthanh.onValueChanged.AddListener(ChangeVolume);
             //amthanh.value = Audiomanager.instance.soundvolume;
+        }
+        if (bgramthanh != null)
+        {
+            bgramthanh.value = sound.volume;
+            bgramthanh.onValueChanged.AddListener(backgroundvolume);
+        }
+    }
+
+    private void backgroundvolume(float bgr)
+    {
+        sound.volume = bgr;
+        if(Audiomanager.instance != null)
+        {
+            Audiomanager.instance.backGroundvolume(bgr);
         }
     }
 
