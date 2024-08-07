@@ -5,14 +5,36 @@ using Unity.VisualScripting;
 
 public class egg1 : MonoBehaviour
 {
-    public GameObject chicken;
+    public GameObject[] newObject;
+    public float tg;
+    private Animator an;
+    public bool obj = true;
+    int random;
     public void Start()
     {
+        
         StartCoroutine(cd());
-    }
+        an = GetComponent<Animator>();
+    } 
     IEnumerator cd()
     {
-        yield return new WaitForSeconds(1);
-        GameObject b = Instantiate(chicken,transform.position,Quaternion.identity);
+        if (obj==false)
+        {
+            yield return new WaitForSeconds(1);
+            an.SetBool("egg", true);
+            yield return new WaitForSeconds(tg);
+            an.SetBool("eggc", true);
+            yield return new WaitForSeconds(0.6f);
+            random = Random.Range(0, 2);                                  
+        }
+        if (obj)
+        {
+            yield return new WaitForSeconds(60);
+        }        
+        GameObject b = Instantiate(newObject[random],transform.position,Quaternion.identity);
+        if (obj==false)
+        {
+            Destroy(gameObject);
+        }
     }
 }

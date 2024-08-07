@@ -8,6 +8,7 @@ public class Audiomanager : MonoBehaviour
 {
     public static Audiomanager instance;
     public float soundvolume = 1f;
+    public float backgroundVolume = 1f;
     private bool j;
     private void Awake()
     {
@@ -20,6 +21,10 @@ public class Audiomanager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    public void backGroundvolume(float bgrVolume)
+    {
+        backgroundVolume = bgrVolume;
     }
     public void Setsoundvolume(float volume)
     {
