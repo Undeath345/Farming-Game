@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class LootContainerInteract : Interactable
 {
@@ -12,21 +13,28 @@ public class LootContainerInteract : Interactable
     {
         if (opened == false)
         {
+            Open(character);
+        }
+        else 
+        {
+            Close(character);
+        }
+    }
+    public void Open(Character character)
+    {
             opened = true;
             closedChest.SetActive(false);
             openedChest.SetActive(true);
 
-            character.GetComponent<ItemContainerInteractController>().Open(ItemContainer);
-
-        }
-        else 
-        {
+            character.GetComponent<ItemContainerInteractController>().Open(ItemContainer, transform);
+    }
+    public void Close(Character character)
+    {
             opened = true;
             closedChest.SetActive(true);
             openedChest.SetActive(false);
 
             character.GetComponent<ItemContainerInteractController>().Close();
-        }
     }
 }
 

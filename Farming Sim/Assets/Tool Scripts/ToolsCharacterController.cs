@@ -16,7 +16,11 @@ public class ToolsCharacterController : MonoBehaviour
     [SerializeField] MarkerManager markerManager;
     [SerializeField] TileMapReadController tileMapReadcontroller;
     [SerializeField] float maxDistance = 1.5f;
+<<<<<<< HEAD
     [SerializeField] IconHighLight iconHighLight;
+=======
+    [SerializeField] ToolAction onTilePickUp;
+>>>>>>> 7659e262b2b6d73bab44e8ab4b29b6d5bd821adc
 
     Vector3Int selectedTilePosition;
     bool selectable;
@@ -99,6 +103,7 @@ public class ToolsCharacterController : MonoBehaviour
             Item item = toolBarController.GetItem;
             if(item == null)
             {
+                PickUpTile();
                 return;
             }
 
@@ -107,7 +112,7 @@ public class ToolsCharacterController : MonoBehaviour
                 return;
             }
             animator.SetTrigger("act");
-            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, tileMapReadcontroller);
+            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, tileMapReadcontroller, item);
 
             if(complete == true)
             {
@@ -119,4 +124,15 @@ public class ToolsCharacterController : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
+=======
+    private void PickUpTile()
+    {
+        if(onTilePickUp == null)
+        {
+            return;
+        }
+        onTilePickUp.OnApplyToTileMap(selectedTilePosition, tileMapReadcontroller, null);
+    }
+>>>>>>> 7659e262b2b6d73bab44e8ab4b29b6d5bd821adc
 }

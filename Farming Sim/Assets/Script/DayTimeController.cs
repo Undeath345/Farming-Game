@@ -45,7 +45,7 @@ public class DayTimeController : MonoBehaviour
     {
         agents.Remove(timeAgent);
     }
-    float Hours
+    public float Hours
     {
         get { return time / 3600f;  }
     }
