@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: Hoe
   m_EditorClassIdentifier: Assembly-CSharp::Item
   Name: Hoe
+  id: 4
   stackable: 0
   icon: {fileID: 1333648791, guid: a8bd3f01bfba3a84eb2fa9793cd30e2d, type: 3}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 11400000, guid: 5b9b4e16c58959745af1d90616335971, type: 2}
   onItemUsed: {fileID: 0}
+<<<<<<< HEAD
   iconHighLight: 1
+=======
+  iconHighLight: 0
+>>>>>>> 28e14fe655bf16f4609b7814468aa0dd9e7eabd3
   itemPrefab: {fileID: 0}
   crop: {fileID: 0}

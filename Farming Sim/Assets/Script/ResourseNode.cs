@@ -22,7 +22,7 @@ public class TreeCutter : ToolHit
             Vector3 position = transform.position;
             position.x += spread * UnityEngine.Random.value - spread / 2;
             position.y += spread * UnityEngine.Random.value - spread / 2;
-            character.GetTired(10);
+            
             ItemSpawnManager.instance.SpawnItem(position,item,itemCountInOneDrop);
 
         }

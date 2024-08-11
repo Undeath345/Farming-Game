@@ -21,12 +21,13 @@ public class PlayerController : MonoBehaviour
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        motionVector = new Vector2(
-           horizontal,
-            vertical
-            );
+
+        motionVector.x = horizontal;
+        motionVector.y = vertical;
+
         ani.SetFloat("horizontal", horizontal);
         ani.SetFloat("vertical", vertical);
+
         moving = horizontal != 0 || vertical != 0;
         ani.SetBool("moving", moving);
 
