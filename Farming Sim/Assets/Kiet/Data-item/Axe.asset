@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: Axe
   m_EditorClassIdentifier: Assembly-CSharp::Item
   Name: Axe
+  id: 1
   stackable: 0
   icon: {fileID: -1231847755, guid: a8bd3f01bfba3a84eb2fa9793cd30e2d, type: 3}
   onAction: {fileID: 11400000, guid: a3cb9b5c1e8111a43bc2b03686a32278, type: 2}
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}
+  iconHighLight: 0
+  itemPrefab: {fileID: 0}
+  crop: {fileID: 0}

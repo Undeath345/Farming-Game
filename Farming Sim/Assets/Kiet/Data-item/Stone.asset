@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Stone
   m_EditorClassIdentifier: Assembly-CSharp::Item
   Name: Stone
+  id: 6
   stackable: 1
   icon: {fileID: -35671738, guid: a8bd3f01bfba3a84eb2fa9793cd30e2d, type: 3}
   onAction: {fileID: 0}
+  onTileMapAction: {fileID: 0}
+  onItemUsed: {fileID: 0}
+  iconHighLight: 0
+  itemPrefab: {fileID: 0}
+  crop: {fileID: 0}

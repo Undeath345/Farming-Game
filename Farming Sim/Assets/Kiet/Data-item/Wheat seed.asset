@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe9a58b10ada5a4da8abbf6df4dfdc9, type: 3}
+  m_Name: Wheat seed
+  m_EditorClassIdentifier: 
+  Name: Wheat seed
+  id: 7
+  stackable: 1
+  icon: {fileID: 923659410, guid: 9f90c081cdbb15a41a07c840b1e412f7, type: 3}
+  onAction: {fileID: 0}
+  onTileMapAction: {fileID: 11400000, guid: 1dfea8999b6185a4a843386f592dddab, type: 2}
+  onItemUsed: {fileID: 11400000, guid: 1dfea8999b6185a4a843386f592dddab, type: 2}
+  iconHighLight: 0
+  itemPrefab: {fileID: 0}
+  crop: {fileID: 11400000, guid: 43d2fa3ad86669a45aef2adec30d682c, type: 2}

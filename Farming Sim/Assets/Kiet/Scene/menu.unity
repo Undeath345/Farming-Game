@@ -654,6 +654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundvolume: 1
+  backgroundVolume: 1
 --- !u!1 &1919414242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,6 +1238,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2676211828916375709, guid: d46a4083e5133944dbf8b8ee3052f74d, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b1893aca95e9fd343993ef74166cc35f, type: 3}
     - target: {fileID: 2797207751981991469, guid: d46a4083e5133944dbf8b8ee3052f74d, type: 3}
       propertyPath: m_Name
       value: SoundVolume

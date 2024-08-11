@@ -1181,7 +1181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soil_Ground_Tiles_51
+      name: PlowedTile
       rect:
         serializedVersion: 2
         x: 64
@@ -1318,6 +1318,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Plowable Dirt: -2031768352
+      PlowedTile: 2001450665
       SeedTile: -56803726
       Soil_Ground_Tiles_0: 483566486
       Soil_Ground_Tiles_1: 512683042
@@ -1364,7 +1365,6 @@ TextureImporter:
       Soil_Ground_Tiles_47: 43602882
       Soil_Ground_Tiles_48: -2125522800
       Soil_Ground_Tiles_5: -1197640872
-      Soil_Ground_Tiles_51: 2001450665
       Soil_Ground_Tiles_52: 315175820
       Soil_Ground_Tiles_53: 1738977692
       Soil_Ground_Tiles_54: 2020826243
