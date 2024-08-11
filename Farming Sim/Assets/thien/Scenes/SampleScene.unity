@@ -258,6 +258,8 @@ MonoBehaviour:
   player: {fileID: 1743895449}
   inventoryContainer: {fileID: 0}
   dragAndDropController: {fileID: 0}
+  timeController: {fileID: 0}
+  placeObject: {fileID: 0}
 --- !u!1 &834074007
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,6 +397,71 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!1001 &1314209428
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5454765869837162274, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_Name
+      value: fruit-n-berries-items_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865499161901960623, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.63287926
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865499161901960623, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6302434
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865499161901960623, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865499161901960623, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865499161901960623, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865499161901960623, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865499161901960623, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865499161901960623, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865499161901960623, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865499161901960623, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865499161901960623, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865499161901960623, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4c9d9cb11fb9dd4498ccf459069da6e, type: 3}
 --- !u!1 &1743895449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2583919689920515406, guid: 5a20323889496be4995d120e6abdec54, type: 3}
@@ -656,3 +723,4 @@ SceneRoots:
   - {fileID: 148644717}
   - {fileID: 4539866167578370521}
   - {fileID: 3256580968817863122}
+  - {fileID: 1314209428}

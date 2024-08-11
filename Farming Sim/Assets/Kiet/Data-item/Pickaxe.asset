@@ -18,3 +18,6 @@ MonoBehaviour:
   onAction: {fileID: 11400000, guid: a741b060e7478b84199d545038ca9680, type: 2}
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}
+  iconHighLight: 1
+  itemPrefab: {fileID: 0}
+  crop: {fileID: 0}

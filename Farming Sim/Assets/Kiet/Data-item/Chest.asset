@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abe9a58b10ada5a4da8abbf6df4dfdc9, type: 3}
   m_Name: Chest
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Chest
   stackable: 0
-  icon: {fileID: 0}
+  icon: {fileID: 1937020007, guid: 8231efbd5a2510a418b83acd47b14909, type: 3}
   onAction: {fileID: 0}
   onTileMapAction: {fileID: 0}
   onItemUsed: {fileID: 0}
-  iconHighLight: 0
+  iconHighLight: 1
   itemPrefab: {fileID: 0}
   crop: {fileID: 0}
