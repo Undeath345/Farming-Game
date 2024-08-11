@@ -232,10 +232,11 @@ MonoBehaviour:
   vt: {fileID: 116527877356087729}
   l: 0
   khuvuc: {x: 0, y: 0}
-  egg: {fileID: 0}
+  egg: {fileID: 2524640176138314252, guid: 79c53e4b898a9ff4b83c2b92a5387459, type: 3}
   Object: 0
   chicken: 1
-  rayDistance: 2
+  rayDistance: 1
   layer:
     serializedVersion: 2
     m_Bits: 4
+  oga: {fileID: 8916803539374006259, guid: 486f8cd4ef6cb044cbc585b10f578c06, type: 3}

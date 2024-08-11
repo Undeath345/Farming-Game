@@ -228,14 +228,15 @@ MonoBehaviour:
   tag: ga
   moveSpeed: 2
   areaSize: 5
-  love: {fileID: 0}
-  vt: {fileID: 1879426388068836861}
+  love: {fileID: 7909812677669110535, guid: 33d9a52251e3c914ea69fd0498dcd7f2, type: 3}
   l: 0
   khuvuc: {x: 0, y: 0}
-  egg: {fileID: 0}
+  egg: {fileID: 2524640176138314252, guid: 79c53e4b898a9ff4b83c2b92a5387459, type: 3}
   Object: 1
   chicken: 1
-  rayDistance: 10
+  rayDistance: 1
   layer:
     serializedVersion: 2
     m_Bits: 4
+  oga: {fileID: 8916803539374006259, guid: 486f8cd4ef6cb044cbc585b10f578c06, type: 3}
+  icon: {fileID: 6772583906725868986, guid: 0be48f20157d1064b8b4d9ebbe8c104d, type: 3}

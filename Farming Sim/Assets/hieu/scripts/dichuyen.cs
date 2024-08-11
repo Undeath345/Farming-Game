@@ -17,12 +17,10 @@ public class dichuyen : MonoBehaviour
     private SpriteRenderer s;
     private Collider2D collider;
     public GameObject love;
-    public Transform vt;
     public bool l = false;
     private Vector2 targetPosition;
     public Vector2 khuvuc = new Vector2(0,0);
     public GameObject egg;
-    //public GameObject vitri;
     public bool Object = false;
     public bool chicken = false;
     private DayTimeController eventController;
@@ -30,6 +28,11 @@ public class dichuyen : MonoBehaviour
     float time = 0;
     public float rayDistance = 2f;
     public LayerMask layer;
+    public GameObject oga;
+    private bool destination = false;
+    private bool vacham = false;
+    private bool dcvacham = true;
+    public GameObject icon;
     void Start()
     {
         collider = GetComponent<Collider2D>();
@@ -49,20 +52,20 @@ public class dichuyen : MonoBehaviour
             {
                 vitri();
             }
-        }        
-        float time = eventController.Hours;        
-        if (eventController != null)
-        {
-            //tg = eventController.Hours;
-            if (time >= 18f|| time <=8f)
-            {
-                gotosleep();
-            }
-            else
-            {                
-                wakeup();
-            }
-        }
+        }                         
+         float time = eventController.Hours;        
+         if (eventController != null)
+         {
+             //tg = eventController.Hours;
+             if (time >= 18f|| time <=8f)
+             {
+                 gotosleep();
+             }
+             else
+             {                
+                 wakeup();
+             }
+         }
         if (sleeping == false)
         {
             rb.velocity = movement * moveSpeed;
@@ -86,6 +89,17 @@ public class dichuyen : MonoBehaviour
     {
         while (true)
         {
+            if (Vector2.Distance(transform.position, oga.transform.position) <= 0.1f && destination && Object)
+            {
+                vacham = false;
+                destination = true;
+                StartCoroutine(Destination());
+                destination = false;
+            }
+            if (vacham)
+            {
+                newvitri();
+            }
             if (l||sleeping == true)
             {                
                 collider.enabled = false;
@@ -105,13 +119,15 @@ public class dichuyen : MonoBehaviour
                 {
                     ani.SetBool("an", true);
                     ani.SetBool("dichuyen", false);                   
-                    moveSpeed = 2f;  // Set walking speed
+                    moveSpeed = 2f;  // Set walking speed                                     
+                    collider.enabled = true;
                 }
                 else 
                 {
                     ani.SetBool("dichuyen", true);
                     ani.SetBool("an", false);                   
                     moveSpeed = 0f;   // Idle, no movement
+                    collider.enabled = false;
                 }                     
                 float waitTime = Random.Range(1f, 3f);
                 yield return new WaitForSeconds(waitTime);
@@ -121,12 +137,9 @@ public class dichuyen : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {        
         if (collision.gameObject.tag == "chicken" && chicken)
-        {
-            StartCoroutine(Love());
-            if (l)
-            {
-                collision.tag = tag;
-            }          
+        {       
+            StartCoroutine(Love());                        
+            collision.tag = tag;                                
         }
     }
     private Vector2 kv()
@@ -138,19 +151,24 @@ public class dichuyen : MonoBehaviour
     IEnumerator Love()
     {
         l = true;
-            GameObject g = Instantiate(love, vt.position, Quaternion.identity);
+            GameObject g = Instantiate(love, transform.position, Quaternion.identity);
+            g.transform.SetParent(transform);
+        g.transform.localPosition = new Vector2(0, 1);
             moveSpeed = 0;       
         ani.SetBool("love", true);
-        Destroy(g, 3f);
-        yield return new WaitForSeconds(3f);        
+        Destroy(g, 5f);
+        yield return new WaitForSeconds(5f);        
         if (Object)
-        {          
-            ani.SetBool("sinhsan", true);            
-            //StartCoroutine(cd());
-            yield return new WaitForSeconds(3f);
-            GameObject Egg = Instantiate(egg, transform.position, Quaternion.identity);
-            ani.SetBool("sinhsan", false);   
-            ani.SetBool("love", false);   
+        {
+            vacham = true;
+            ani.SetBool("love", false);
+
+            /*   ani.SetBool("sinhsan", true);
+               //StartCoroutine(cd());
+               yield return new WaitForSeconds(3f);
+               GameObject Egg = Instantiate(egg, transform.position, Quaternion.identity);
+               ani.SetBool("sinhsan", false);
+               ani.SetBool("love", false);        */
         }
         else { ani.SetBool("love", false); }
         l = false;
@@ -175,6 +193,28 @@ public class dichuyen : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawRay(transform.position, transform.right * rayDistance);
+    }
+    private void newvitri()
+    {
+        destination = true;
+        l = true;
+        moveSpeed = 2;
+        Vector2 vitriOga = (oga.transform.position-transform.position).normalized;
+        movement = vitriOga;
+    }
+    IEnumerator Destination()
+    {
+        l = true;
+        moveSpeed = 0;
+        ani.SetBool("sinhsan", true);        
+        yield return new WaitForSeconds(5f);
+        GameObject Egg = Instantiate(egg, transform.position, Quaternion.identity);      
+        GameObject hicon = Instantiate(icon,egg.transform.position, Quaternion.identity);
+        hicon.transform.SetParent(Egg.transform);
+        hicon.transform.localPosition = new Vector2(0, 1);
+        ani.SetBool("sinhsan", false);
+        ani.SetBool("love", false);
+        l = false;
     }
 }
 
