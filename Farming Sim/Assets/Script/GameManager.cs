@@ -14,4 +14,6 @@ public class GameManager : MonoBehaviour
     public ItemDragAndDropController dragAndDropController;
     public DayTimeController timeController;
     public ItemList itemDB;
+
+    public ScreenTint screenTint;
 }

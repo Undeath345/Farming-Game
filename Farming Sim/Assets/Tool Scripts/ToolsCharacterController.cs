@@ -56,12 +56,10 @@ public class ToolsCharacterController : MonoBehaviour
         Vector2 cameraPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         selectable = Vector2.Distance(characterPosition, cameraPosition) < maxDistance;
         markerManager.Show(selectable);
-        iconHighLight.CanSelect = selectable;
     }
     private void Marker()
     {
         markerManager.markedCellPosition = selectedTilePosition;
-        iconHighLight.targetPosition = selectedTilePosition;
     }
     
     private bool UseToolWorld()

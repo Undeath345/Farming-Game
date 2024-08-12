@@ -9,9 +9,9 @@ public class ItemSpawner : MonoBehaviour
     [SerializeField] Item toSpawn;
     [SerializeField] int count;
 
-    [SerializeField] float spread = 2f;
+    [SerializeField] float spread = 5f;
 
-    [SerializeField] float probability = 0.5f;
+    [SerializeField] float probability = 0.01f;
 
     private void Start()
     {

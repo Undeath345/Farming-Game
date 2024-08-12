@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3505184905017070249}
   - component: {fileID: 2701733201158295979}
   - component: {fileID: 2522165378467256607}
-  - component: {fileID: 3322799050886254144}
   - component: {fileID: 5131705333810424696}
   - component: {fileID: 1826295654296746490}
   m_Layer: 0
@@ -199,20 +198,6 @@ MonoBehaviour:
   speed: 2
   lastMotionVector: {x: 0, y: -1}
   moving: 0
---- !u!114 &3322799050886254144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2583919689920515406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0434a5eca38fc045b948a67bf264816, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetDistance: 1
-  sizeOfInteractableArea: 1.2
 --- !u!114 &5131705333810424696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,6 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 0}
   toolbarPanel: {fileID: 0}
+  statusPanel: {fileID: 0}
 --- !u!114 &1826295654296746490
 MonoBehaviour:
   m_ObjectHideFlags: 0

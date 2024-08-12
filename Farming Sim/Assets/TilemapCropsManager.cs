@@ -128,7 +128,7 @@ public class TilemapCropsManager : TimeAgent
     internal void PickUp(Vector3Int gridPosition)
     {
 
-        Vector2Int position = (Vector2Int)gridPosition;
+        Vector2Int Position = (Vector2Int)gridPosition;
         CropTile tile = container.Get(gridPosition);
         if(tile == null) { return; }
 

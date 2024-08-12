@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soil_Ground_Tiles_0
+      name: Plowable top left
       rect:
         serializedVersion: 2
         x: 0
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soil_Ground_Tiles_1
+      name: Plowable right
       rect:
         serializedVersion: 2
         x: 16
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soil_Ground_Tiles_2
+      name: Plowable top right
       rect:
         serializedVersion: 2
         x: 32
@@ -320,7 +320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soil_Ground_Tiles_10
+      name: "Plowable l\xE8t"
       rect:
         serializedVersion: 2
         x: 0
@@ -362,7 +362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soil_Ground_Tiles_12
+      name: Plowable rightright
       rect:
         serializedVersion: 2
         x: 32
@@ -530,7 +530,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soil_Ground_Tiles_20
+      name: "Plowable bottom l\xE8t"
       rect:
         serializedVersion: 2
         x: 0
@@ -551,7 +551,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soil_Ground_Tiles_21
+      name: plowable bottom
       rect:
         serializedVersion: 2
         x: 16
@@ -572,7 +572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soil_Ground_Tiles_22
+      name: Plowable bottom right
       rect:
         serializedVersion: 2
         x: 32
@@ -1318,13 +1318,16 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Plowable Dirt: -2031768352
+      "Plowable bottom l\xE8t": 207455950
+      Plowable bottom right: 1094582008
+      "Plowable l\xE8t": -1959062232
+      Plowable right: 512683042
+      Plowable rightright: -893540868
+      Plowable top left: 483566486
+      Plowable top right: -278894523
       PlowedTile: 2001450665
       SeedTile: -56803726
-      Soil_Ground_Tiles_0: 483566486
-      Soil_Ground_Tiles_1: 512683042
-      Soil_Ground_Tiles_10: -1959062232
       Soil_Ground_Tiles_11: 1325940717
-      Soil_Ground_Tiles_12: -893540868
       Soil_Ground_Tiles_13: -1614074469
       Soil_Ground_Tiles_14: 918507608
       Soil_Ground_Tiles_15: -1629622221
@@ -1332,10 +1335,6 @@ TextureImporter:
       Soil_Ground_Tiles_17: 662057457
       Soil_Ground_Tiles_18: -1252546896
       Soil_Ground_Tiles_19: 491011675
-      Soil_Ground_Tiles_2: -278894523
-      Soil_Ground_Tiles_20: 207455950
-      Soil_Ground_Tiles_21: 89698105
-      Soil_Ground_Tiles_22: 1094582008
       Soil_Ground_Tiles_23: -1021156262
       Soil_Ground_Tiles_24: 346597117
       Soil_Ground_Tiles_25: 1958373753
@@ -1374,6 +1373,7 @@ TextureImporter:
       Soil_Ground_Tiles_7: 1778062435
       Soil_Ground_Tiles_8: 750364959
       Soil_Ground_Tiles_9: -1630699813
+      plowable bottom: 89698105
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

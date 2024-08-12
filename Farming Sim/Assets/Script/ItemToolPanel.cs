@@ -29,6 +29,5 @@ public class ItemToolPanel : ItemPanel
     public override void Show()
     {
         base.Show();
-        toolBarController.UpdateHighlightIcon();
     }
 }

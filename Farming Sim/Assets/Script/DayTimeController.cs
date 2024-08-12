@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using System;
 
 public class DayTimeController : MonoBehaviour
 {
@@ -101,5 +102,10 @@ public class DayTimeController : MonoBehaviour
     {
         time = 0;
         days += 1;
+    }
+
+    internal void SkipToMorning()
+    {
+        throw new NotImplementedException();
     }
 }
