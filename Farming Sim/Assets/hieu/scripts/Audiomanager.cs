@@ -30,8 +30,9 @@ public class Audiomanager : MonoBehaviour
     {
         soundvolume = volume;
     }
-    public void Applyvolume (AudioSource sound)
+    public void Applyvolume (AudioSource sound, AudioSource backvolume)
     {
         sound.volume = soundvolume;
+        backvolume.volume = backgroundVolume;
     }
 }

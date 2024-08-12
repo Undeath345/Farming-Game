@@ -10,17 +10,17 @@ public class egg1 : MonoBehaviour
     private Animator an;
     public bool obj = true;
     int random;
+    public GameObject icon;
     public void Start()
-    {
-        
+    {        
         StartCoroutine(cd());
-        an = GetComponent<Animator>();
+        an = GetComponent<Animator>();        
     } 
     IEnumerator cd()
     {
         if (obj==false)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(20);
             an.SetBool("egg", true);
             yield return new WaitForSeconds(tg);
             an.SetBool("eggc", true);
@@ -32,9 +32,15 @@ public class egg1 : MonoBehaviour
             yield return new WaitForSeconds(60);
         }        
         GameObject b = Instantiate(newObject[random],transform.position,Quaternion.identity);
+        if (obj)
+        {
+            GameObject hicon = Instantiate(icon, b.transform.position, Quaternion.identity);
+            hicon.transform.SetParent(b.transform);
+            hicon.transform.localPosition = new Vector2(0, 1);
+        }
         if (obj==false)
         {
             Destroy(gameObject);
         }
-    }
+    }   
 }

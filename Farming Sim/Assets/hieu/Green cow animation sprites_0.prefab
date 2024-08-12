@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 5884264917549992028}
   - component: {fileID: 2354422840469308017}
   - component: {fileID: 9157478414446021325}
+  - component: {fileID: -1368766126615160465}
   m_Layer: 0
   m_Name: Green cow animation sprites_0
   m_TagString: Untagged
@@ -157,7 +158,6 @@ MonoBehaviour:
   moveSpeed: 2
   areaSize: 5
   love: {fileID: 7780374849685848493, guid: 8b7acae995e848240b39d701000fa6a1, type: 3}
-  vt: {fileID: 2417078675830183015}
   l: 0
   khuvuc: {x: 0, y: 0}
   egg: {fileID: 7780374849685848493, guid: 8b7acae995e848240b39d701000fa6a1, type: 3}
@@ -167,6 +167,8 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 4
+  oga: {fileID: 8916803539374006259, guid: 486f8cd4ef6cb044cbc585b10f578c06, type: 3}
+  icon: {fileID: 2452128464512208341, guid: ab5a3818aae1b2b4bb99eaf472962ab9, type: 3}
 --- !u!50 &2354422840469308017
 Rigidbody2D:
   serializedVersion: 4
@@ -210,3 +212,49 @@ MonoBehaviour:
   - {fileID: 7780374849685848493, guid: 8b7acae995e848240b39d701000fa6a1, type: 3}
   tg: 0
   obj: 1
+  icon: {fileID: 2452128464512208341, guid: ab5a3818aae1b2b4bb99eaf472962ab9, type: 3}
+--- !u!61 &-1368766126615160465
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2500354604995060139}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6875, y: 1.125}
+    newSize: {x: 1.6875, y: 1.125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6875, y: 1.125}
+  m_EdgeRadius: 0

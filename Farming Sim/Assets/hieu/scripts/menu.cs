@@ -4,36 +4,38 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+// using System.Numerics;
 
 public class menu : MonoBehaviour
 {   
     [SerializeField] private GameObject pn;
     public Slider amthanh;
     public Slider bgramthanh;
-    public AudioSource sound;
+    public List<AudioSource> sound;
+    public AudioSource backvolume;
     private bool k;
     private void Start()
     {
         if (Audiomanager.instance != null)
         {
-            Audiomanager.instance.Applyvolume(sound);
+            Audiomanager.instance.Applyvolume(sound[0],backvolume);
         }
-        if (amthanh != null)
+        if (amthanh != null && sound.Count>0)
         {
-            amthanh.value = sound.volume;
+            amthanh.value = Audiomanager.instance.soundvolume;
             amthanh.onValueChanged.AddListener(ChangeVolume);
             //amthanh.value = Audiomanager.instance.soundvolume;
         }
         if (bgramthanh != null)
         {
-            bgramthanh.value = sound.volume;
+            bgramthanh.value = backvolume.volume;
             bgramthanh.onValueChanged.AddListener(backgroundvolume);
         }
     }
 
     private void backgroundvolume(float bgr)
     {
-        sound.volume = bgr;
+        backvolume.volume = bgr;
         if(Audiomanager.instance != null)
         {
             Audiomanager.instance.backGroundvolume(bgr);
@@ -42,10 +44,16 @@ public class menu : MonoBehaviour
 
     private void ChangeVolume(float sound1)
     {
-       sound.volume = sound1;
-        if (Audiomanager.instance != null)
+        foreach (var sounds in sound)
         {
-            Audiomanager.instance.Setsoundvolume(sound1);
+            if (sound != null)
+            {
+                sounds.volume = sound1;
+            }
+            if (Audiomanager.instance != null)
+            {
+                Audiomanager.instance.Setsoundvolume(sound1);
+            }
         }
     }
 
